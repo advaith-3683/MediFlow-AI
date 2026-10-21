@@ -4,7 +4,7 @@ React + TypeScript + Express + MongoDB healthcare workflow portfolio project wit
 
 ## Current workflows
 
-- Patients sign up/sign in with email and password; email OTP is optional, not mandatory.
+- Patients sign up/sign in with email and password.
 - Doctors register professional details and require administrator approval before clinical access or booking eligibility.
 - Recommendations select canonical specialties; doctor profiles and available slots come only from the database.
 - Booking, rescheduling, cancellation, completion, amendments and admin decisions use transaction safeguards. MongoDB replica-set transaction verification remains pending.
@@ -32,7 +32,8 @@ Disposable real transaction verification is separate: see [the isolated harness 
 
 ## Deployment
 
-Follow [Phase 7 deployment readiness and verification](backend/PHASE7_DEPLOYMENT.md) for exact hosting settings, environment templates, storage limitations, SPA rewrites, trusted-proxy configuration, health checks, integration/Gemini plans and release gates. No deployment or real-provider success is claimed.
+Follow [Phase 7 deployment readiness and verification](backend/PHASE7_DEPLOYMENT.md) for exact hosting settings, environment templates, storage limitations, SPA rewrites, trusted-proxy configuration, health checks, integration/Gemini plans and release gates.
+
 
 Free ephemeral hosting can demonstrate synthetic workflows with MEDICAL_UPLOADS_ENABLED=false; it cannot safely retain private medical files. Do not use real patient data in a portfolio demo. In-app polling, partial UI translation and browser printing remain the existing supported contracts; no compliance certification or legal prescription signature is claimed.
 
